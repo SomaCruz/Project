@@ -13,7 +13,7 @@ public class Persoon
     private int dag;
     private int maand;
     private int jaar;
-    private char geslacht;
+    private char geslacht;/*asdasdasd*/
     
     /**
      * Constructor for objects of class Persoon
