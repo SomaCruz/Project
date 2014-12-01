@@ -1,6 +1,7 @@
 #BlueJ class context
 comment0.params=kassarij
 comment0.target=Kassa(KassaRij)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Kassa\r\n
 comment1.params=persoon
 comment1.target=void\ rekenAf(Persoon)
 comment1.text=\r\n\ vraag\ het\ aantal\ artikelen\ en\ de\ totaalprijs\ op.\r\n\ De\ implementatie\ wordt\ later\ vervangen\r\n\ door\ een\ echte\ betaling\ door\ de\ persoon.\r\n\ @param\ persoon\ die\ moet\ afrekenen\r\n

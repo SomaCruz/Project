@@ -1,22 +1,30 @@
+/**
+ * Write a description of class KantinSimulatie here.
+ * 
+ * Weiwei Tao, Patrick Breukelman
+ * @ version week2 - date 01'12'2014
+ */
 public class KantineSimulatie 
 {
     private Kantine kantine;
+    
     /**
-       * Constructor
-         */
+     * Constructor for objects of class KantineSimulatie
+     */
     public KantineSimulatie() 
     {
-        kantine=new Kantine();
+        kantine = new Kantine();
     }
+    
     /**
-       * Deze methode simuleert een aantal dagen in het
-         * verloop van de kantine
-           * @param dagen
-             */
+     * Deze methode simuleert een aantal dagen in het
+     * verloop van de kantine
+     * @param dagen
+     */
     public void simuleer(int dagen) 
     {
         // for lus voor dagen
-        for(int i = 0; i < dagen; i++) {
+        for (int i = 0; i < dagen; i++) {
             // per dag nu even vast 10+i personen naar binnen
             // laten gaan, wordt volgende week veranderd...
             // for lus voor personen

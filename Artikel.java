@@ -2,8 +2,8 @@
 /**
  * Write a description of class Artikel here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Weiwei Tao, Patrick Breukelman
+ * @ version week2 - 01'12'2014
  */
 public class Artikel
 {
@@ -36,7 +36,7 @@ public class Artikel
     {
     System.out.println("########*Gegevens*#########");
     System.out.println("Naam product: " + naam);
-    System.out.println("Prijs: " + prijs + "euro's");
+    System.out.println("Prijs: " + prijs + " euro's");
     System.out.print("########*Gegevens*#########");
     System.out.println();
     }

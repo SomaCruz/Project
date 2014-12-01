@@ -1,9 +1,8 @@
-
 /**
  * Write a description of class Persoon here.
  * 
  * Weiwei Tao, Patrick Breukelman
- * @1 - 21-11-2014
+ * @ version week2 - date 01'12'2014
  */
 public class Persoon
 {
@@ -28,22 +27,34 @@ public class Persoon
         setGeboortedatum(persoonDag, persoonMaand, persoonJaar);
         setGeslacht(persoonGeslacht);
     }
-    //5 setters: achternaam/voornaam/geslacht/geboortedatum/BSN
+    
+    /**
+     * setter voor voornaam
+     */
     public void setVoornaam(String vn)
     {
         voornaam = vn;
     }
     
+    /**
+     * setter voor achternaam
+     */
     public void setAchternaam(String an)
     {
         achternaam = an;
     }
     
+    /**
+     * setter voor bsn
+     */
     public void setBsn(int newbsn)
     {
         bsn = newbsn;
     }
     
+    /**
+     * setter voor geboortedatum
+     */
     public void setGeboortedatum(int dag, int maand, int jaar)
     {
          if (dag >= 1 && dag <= 31 && maand >= 1 && maand <= 12 && jaar >= 1900 && jaar <= 2100)
@@ -76,6 +87,9 @@ public class Persoon
         this.jaar = 0;
     }
 
+    /**
+     * setter voor geslacht
+     */
     public void setGeslacht(char geslacht) {
         if (geslacht == 'M') {
            this.geslacht = geslacht;
@@ -85,22 +99,34 @@ public class Persoon
             this.geslacht = '?';
         }
     }
-    //5 getters: achternaam/voornaam/geslacht/geboortedatum/BSN
+    
+    /**
+     * getter voor bsn
+     */
     public int getBsn()
     {
         return this.bsn;
     }
     
+    /**
+     * getter voor voornaam
+     */
     public String getVoornaam()
     {
         return this.voornaam;
     }
     
+    /**
+     * getter voor achternaam
+     */
     public String getAchternaam()
     {
         return this.achternaam;
     }
     
+    /**
+     * getter voor geslacht
+     */
     public String getGeslacht()
     {
         String geengeslacht;
@@ -114,6 +140,9 @@ public class Persoon
         return geengeslacht;
     }
     
+    /**
+     * getter voor geboortedatum
+     */
     public String getGeboorteDatum() 
     {
          String dagmaandjaar;
@@ -128,7 +157,7 @@ public class Persoon
     public void drukAf()
     {
         System.out.println("########*Gegevens*#########");
-        System.out.println("Voornaam:  " + voornaam);
+        System.out.println("Voornaam: " + voornaam);
         System.out.println("Achternaam: " + achternaam);
         System.out.println("BSN: " + bsn);
         System.out.print("Geboortedatum: " + dag);
@@ -146,59 +175,50 @@ public class Persoon
         System.out.println();
     }
     
-     public void pakDienblad(Dienblad dienblad)
+    public void pakDienblad(Dienblad dienblad)
     {
         this.dienblad = dienblad;
     }
     
     /**
-       * Methode om artikel te pakken en te plaatsen op het dienblad
-         * @param artikel
-           */
+     * Methode om artikel te pakken en te plaatsen op het dienblad
+     * @param artikel
+     */
     public void pakArtikel(Artikel artikel) 
     {
-        if(dienblad == null) 
-        {
+        if (dienblad == null) {
             System.out.println("U heeft geen dienblad");
-        }
-        else 
-        {
+        } else {
             dienblad.voegToe(artikel);
         }
     }
     
     /**
-       * Methode om de totaalprijs van de artikelen
-         * op dienblad dat bij de persoon hoort uit te rekenen
-           * @return De totaalprijs
-             */
+     * Methode om de totaalprijs van de artikelen
+     * op dienblad dat bij de persoon hoort uit te rekenen
+     * @return De totaalprijs
+     */
     public double getTotaalPrijs() 
     {
-        if(dienblad == null) 
-        {
+        if (dienblad == null) {
             System.out.println("U heeft geen dienblad");
             return 0;
-        }
-        else 
-        {
+        } else {
             return dienblad.getTotaalPrijs();
         }
     }
     
     /**
-       * Methode om het aantal artikelen op dienblad dat bij de
-         * persoon hoort te tellen
-           * @return Het aantal artikelen
-             */
+     * Methode om het aantal artikelen op dienblad dat bij de
+     * persoon hoort te tellen
+     * @return Het aantal artikelen
+     */
     public int getAantalArtikelen() 
     {
-        if(dienblad == null) 
-        {
+        if (dienblad == null) {
             System.out.println("U heeft geen dienblad");
             return 0;
-        }
-        else 
-        {
+        } else {
             return dienblad.getAantalArtikelen();
         }
     }
