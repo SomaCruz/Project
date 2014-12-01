@@ -9,12 +9,12 @@ public class Artikel
 {
     // instance variables - replace the example below with your own
     private String naam;
-    private String prijs;
+    private double prijs;
 
     /**
      * Constructor for objects of class Artikel
      */
-    public Artikel(String artikelNaam, String artikelPrijs)
+    public Artikel(String artikelNaam, double artikelPrijs)
     
     {
         // initialise instance variables
@@ -27,7 +27,7 @@ public class Artikel
         return naam;
     }
     
-    public String getPrijs()
+    public double getPrijs()
     {
         return prijs;
     }

@@ -39,7 +39,7 @@ public class Dienblad
         double totaalPrijs = 0;
         
         for(int i = 0; i < this.artikelen.size(); i++) {
-            totaalPrijs += this.artikelen.get(i).getArtikelprijs();
+            totaalPrijs += this.artikelen.get(i).getPrijs();
         }
         return totaalPrijs;
     }

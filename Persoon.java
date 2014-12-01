@@ -157,7 +157,14 @@ public class Persoon
            */
     public void pakArtikel(Artikel artikel) 
     {
-        //method body omitted
+        if(dienblad == null) 
+        {
+            System.out.println("U heeft geen dienblad");
+        }
+        else 
+        {
+            dienblad.voegToe(artikel);
+        }
     }
     
     /**
@@ -167,7 +174,15 @@ public class Persoon
              */
     public double getTotaalPrijs() 
     {
-        //method body omitted
+        if(dienblad == null) 
+        {
+            System.out.println("U heeft geen dienblad");
+            return 0;
+        }
+        else 
+        {
+            return dienblad.getTotaalPrijs();
+        }
     }
     
     /**
@@ -177,6 +192,14 @@ public class Persoon
              */
     public int getAantalArtikelen() 
     {
-        //method body omitted
+        if(dienblad == null) 
+        {
+            System.out.println("U heeft geen dienblad");
+            return 0;
+        }
+        else 
+        {
+            return dienblad.getAantalArtikelen();
+        }
     }
 }
