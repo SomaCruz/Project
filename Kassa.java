@@ -2,9 +2,13 @@ public class Kassa {
     /**
        * Constructor
          */
+    private int verkocht;
+    private double kassaGeld;
+    private KassaRij kassarij;
     public Kassa(KassaRij kassarij) 
     {
-        //method body omitted
+        this.kassarij = kassarij;
+        this.kassaGeld = 0.0;
     }
     /**
        * vraag het aantal artikelen en de totaalprijs op.
@@ -14,7 +18,8 @@ public class Kassa {
                */
     public void rekenAf(Persoon persoon) 
     {
-        //method body omitted
+        this.verkocht += persoon.getAantalArtikelen();
+        this.kassaGeld += persoon.getTotaalPrijs();
     }
     /**
        * Geeft het aantal artikelen dat de kassa
@@ -25,7 +30,7 @@ public class Kassa {
                  */
     public int aantalArtikelen() 
     {
-        //method body omitted
+        return this.verkocht;
     }
     /**
        * Geeft het totaalbedrag van alle artikelen die
@@ -36,7 +41,7 @@ public class Kassa {
                 */
     public double hoeveelheidGeldInKassa() 
     {
-        //method body omitted
+        return this.kassaGeld;
     }
     /**
        * reset de waarden van het aantal gepasseerde artikelen en
@@ -44,6 +49,7 @@ public class Kassa {
            */
     public void resetKassa() 
     {
-        //method body omitted
+        this.verkocht = 0;
+        this.kassaGeld = 0.0;
     }
 }

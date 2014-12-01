@@ -1,10 +1,13 @@
+import java.util.ArrayList;
 public class KassaRij {
     /**
        * Constructor
          */
+    private ArrayList<Persoon> personen;
+        
     public KassaRij() 
     {
-        //method body omitted
+        personen = new ArrayList<Persoon>();
     }
     /**
        * Persoon sluit achter in de rij aan
@@ -12,7 +15,7 @@ public class KassaRij {
            */
     public void sluitAchteraan(Persoon persoon) 
     {
-        //method body omitted
+        personen.add(persoon);
     }
     /**
        * Indien er een rij bestaat, de eerste Persoon uit
@@ -22,7 +25,16 @@ public class KassaRij {
                */
     public Persoon eerstePersoonInRij() 
     {
-        //method body omitted
+        if(personen.size() > 0) 
+        {
+            Persoon Eerste = personen.get(0);
+            personen.remove(0);
+            return Eerste;
+        }
+        else 
+        {
+            return null;
+        }
     }
     /**
        * Methode kijkt of er personen in de rij staan.
@@ -30,6 +42,13 @@ public class KassaRij {
            */
     public boolean erIsEenRij() 
     {
-        //method body omitted
+        if (personen.size() > 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
