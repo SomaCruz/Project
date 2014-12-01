@@ -88,17 +88,17 @@ public class Persoon
     //5 getters: achternaam/voornaam/geslacht/geboortedatum/BSN
     public int getBsn()
     {
-        return bsn;
+        return this.bsn;
     }
     
     public String getVoornaam()
     {
-        return voornaam;
+        return this.voornaam;
     }
     
     public String getAchternaam()
     {
-        return achternaam;
+        return this.achternaam;
     }
     
     public String getGeslacht()
