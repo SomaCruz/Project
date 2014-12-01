@@ -8,9 +8,9 @@ public class Dienblad
     */
     public Dienblad() 
     {
-        // method body omitted
         this.artikelen = new ArrayList<Artikel>();
     }
+    
     /**
     * Methode om artikel aan dienblad toe te voegen
     * @param artikel
@@ -19,6 +19,7 @@ public class Dienblad
     {
        this.artikelen.add(artikel);
     }
+    
     /**
        * Methode om aantal artikelen op dienblad te tellen
          * @return Het aantal artikelen
@@ -27,6 +28,7 @@ public class Dienblad
     {
         return this.artikelen.size();
     }
+    
     /**
        * Methode om de totaalprijs van de artikelen
          * op dienblad uit te rekenen

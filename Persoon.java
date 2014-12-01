@@ -157,7 +157,7 @@ public class Persoon
            */
     public void pakArtikel(Artikel artikel) 
     {
-       this.artikelen.add(artikel);
+        //method body omitted
     }
     
     /**
@@ -167,12 +167,7 @@ public class Persoon
              */
     public double getTotaalPrijs() 
     {
-        double totaalPrijs = 0;
-        
-        for(int i = 0; i < this.artikelen.size(); i++) {
-            totaalPrijs += this.artikelen.get(i).getArtikelprijs();
-        }
-        return totaalPrijs;
+        //method body omitted
     }
     
     /**
