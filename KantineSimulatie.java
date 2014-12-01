@@ -1,4 +1,5 @@
-public class KantineSimulatie {
+public class KantineSimulatie 
+{
     private Kantine kantine;
     /**
        * Constructor

@@ -1,14 +1,15 @@
-import java.util.ArrayList;
+import java.util.Stack;
 
-public class Dienblad 
+public class Dienblad
 {
-    private ArrayList<Artikel> artikelen;
     /**
     * Constructor
     */
-    public Dienblad() 
+    private Stack<Artikel> artikelen;
+    
+    public Dienblad()
     {
-        this.artikelen = new ArrayList<Artikel>();
+        artikelen = new Stack<Artikel>();
     }
     
     /**
@@ -17,7 +18,7 @@ public class Dienblad
     */
     public void voegToe(Artikel artikel) 
     {
-       this.artikelen.add(artikel);
+       artikelen.add(artikel);
     }
     
     /**
@@ -37,7 +38,6 @@ public class Dienblad
     public double getTotaalPrijs() 
     {
         double totaalPrijs = 0;
-        
         for(int i = 0; i < this.artikelen.size(); i++) {
             totaalPrijs += this.artikelen.get(i).getPrijs();
         }

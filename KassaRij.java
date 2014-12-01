@@ -1,13 +1,13 @@
-import java.util.ArrayList;
+import java.util.LinkedList;
 public class KassaRij {
     /**
        * Constructor
          */
-    private ArrayList<Persoon> personen;
+    private LinkedList<Persoon> personen;
         
     public KassaRij() 
     {
-        personen = new ArrayList<Persoon>();
+        personen = new LinkedList<Persoon>();
     }
     /**
        * Persoon sluit achter in de rij aan
