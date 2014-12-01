@@ -25,6 +25,7 @@ public class KantineSimulatie {
             // verwerk rij voor de kassa
             // toon dagtotalen (artikelen en geld in kassa)
             // reset de kassa voor de volgende dag
+            kantine.resetKassa();
         }
     }
 }
