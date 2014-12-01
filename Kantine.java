@@ -19,7 +19,15 @@ public class Kantine {
                    */
     public void loopPakSluitAan() 
     {
-        //omitted
+      Persoon persoon = new Persoon("999666999", "Bennie", "Tiggeloven", "1", "5", "2000", "M");
+      Dienblad dienblad = new Dienblad();
+      Artikel artikel1 = new Artikel ("Pizza", "3.50");
+      Artikel artikel2 = new Artikel ("Koffie", "1.00");
+      
+      persoon.pakDienblad(dienblad);
+      persoon.pakArtikel(artikel1);
+      persoon.pakArtikel(artikel2);
+      kassarij.sluitAchteraan(persoon);
     }
     /**
        * Deze methode handelt de rij voor de kassa af.
