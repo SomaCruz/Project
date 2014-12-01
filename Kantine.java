@@ -54,7 +54,7 @@ public class Kantine {
            */
     public int aantalArtikelen()
     {
-        //omitted
+        return kassa.aantalArtikelen();
     }
     /**
        * Deze methode reset de bijgehouden telling van
@@ -63,6 +63,6 @@ public class Kantine {
              */
     public void resetKassa() 
     {
-        // omitted
+        kassa.resetKassa();
     }
 }
