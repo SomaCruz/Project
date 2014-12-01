@@ -13,7 +13,8 @@ public class Persoon
     private int dag;
     private int maand;
     private int jaar;
-    private char geslacht;/*asdasdasd*/
+    private char geslacht;
+    private Dienblad dienblad;
     
     /**
      * Constructor for objects of class Persoon
@@ -143,5 +144,44 @@ public class Persoon
         }
         System.out.print("########*Gegevens*#########");
         System.out.println();
+    }
+    
+     public void pakDienblad(Dienblad dienblad)
+    {
+        this.dienblad = dienblad;
+    }
+    
+    /**
+       * Methode om artikel te pakken en te plaatsen op het dienblad
+         * @param artikel
+           */
+    public void pakArtikel(Artikel artikel) 
+    {
+       this.artikelen.add(artikel);
+    }
+    
+    /**
+       * Methode om de totaalprijs van de artikelen
+         * op dienblad dat bij de persoon hoort uit te rekenen
+           * @return De totaalprijs
+             */
+    public double getTotaalPrijs() 
+    {
+        double totaalPrijs = 0;
+        
+        for(int i = 0; i < this.artikelen.size(); i++) {
+            totaalPrijs += this.artikelen.get(i).getArtikelprijs();
+        }
+        return totaalPrijs;
+    }
+    
+    /**
+       * Methode om het aantal artikelen op dienblad dat bij de
+         * persoon hoort te tellen
+           * @return Het aantal artikelen
+             */
+    public int getAantalArtikelen() 
+    {
+        //method body omitted
     }
 }
