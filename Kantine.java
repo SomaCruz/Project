@@ -1,6 +1,7 @@
 public class Kantine {
     private Kassa kassa;
     private KassaRij kassarij;
+    private Persoon persoon;
     /**
        * Constructor
          */
@@ -19,10 +20,10 @@ public class Kantine {
                    */
     public void loopPakSluitAan() 
     {
-      Persoon persoon = new Persoon("999666999", "Bennie", "Tiggeloven", "1", "5", "2000", "M");
+      Persoon persoon = new Persoon(999666999, "Bennie", "Tiggeloven", 1, 5, 2000, 'M');
       Dienblad dienblad = new Dienblad();
-      Artikel artikel1 = new Artikel ("Pizza", "3.50");
-      Artikel artikel2 = new Artikel ("Koffie", "1.00");
+      Artikel artikel1 = new Artikel ("Pizza", 3.50);
+      Artikel artikel2 = new Artikel ("Koffie", 1.00);
       
       persoon.pakDienblad(dienblad);
       persoon.pakArtikel(artikel1);
@@ -34,8 +35,9 @@ public class Kantine {
          */
     public void verwerkRijVoorKassa() 
     {
-        while() {
-            //omitted
+        while((this.persoon = kassarij.eerstePersoonInRij()) != null) 
+        {
+            kassa.rekenAf(persoon);
         }
     }
     /**
@@ -44,7 +46,7 @@ public class Kantine {
            */
     public double hoeveelheidGeldInKassa() 
     {
-        //omitted
+        return kassa.hoeveelheidGeldInKassa();
     }
     /**
        * Deze methode geeft het aantal gepasseerde artikelen.
