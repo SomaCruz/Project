@@ -9,6 +9,7 @@ public class Kantine
     private Kassa kassa;
     private KassaRij kassarij;
     private Persoon persoon;
+    private KantineAanbod kantineaanbod;
     
     /**
      * Constructor for objects of class Kantine
@@ -56,5 +57,9 @@ public class Kantine
         kassa.resetKassa();
         kassa.aantalArtikelen();
         kassa.hoeveelheidGeldInKassa();
+    }
+    
+    public KantineAanbod getKantineAanbod(){       
+        return kantineaanbod;        
     }
 }

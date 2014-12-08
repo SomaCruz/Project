@@ -3,7 +3,6 @@ import java.util.*;
 public class KantineAanbod {
     // interne opslag voorraad
     private HashMap<String, ArrayList<Artikel>> aanbod;
-   
     
     /**
      * Constructor. Het eerste argument is een lijst met artikelnamen,
@@ -61,4 +60,6 @@ public class KantineAanbod {
     public Artikel getArtikel(String naam) {
         return getArtikel(getArrayList(naam));
     }
+    
+    
 }

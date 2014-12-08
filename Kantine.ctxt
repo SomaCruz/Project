@@ -10,4 +10,6 @@ comment2.target=void\ verwerkRijVoorKassa()
 comment2.text=\r\n\ Deze\ methode\ handelt\ de\ rij\ voor\ de\ kassa\ af.\r\n
 comment3.params=
 comment3.target=void\ getKassa()
-numComments=4
+comment4.params=
+comment4.target=KantineAanbod\ getKantineAanbod()
+numComments=5
