@@ -51,7 +51,7 @@ public class Kantine
         }
     }
      
-    private void getKassa()
+    public void getKassa()
     {
         kassa.resetKassa();
         kassa.aantalArtikelen();
