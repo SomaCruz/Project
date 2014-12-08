@@ -34,7 +34,7 @@ public class KantineSimulatie
             // verwerk rij voor de kassa
             kantine.verwerkRijVoorKassa();
             // toon dagtotalen (artikelen en geld in kassa)
-            System.out.println("Totaal aantal vekochte artikelen: "+kantine.aantalArtikelen());
+            System.out.println("Totaal aantal vekochte artikelen: "+aantalArtikelen());
             System.out.println("Totaal aantal geld in kassa: "+kantine.hoeveelheidGeldInKassa());
             // reset de kassa voor de volgende dag
             kantine.resetKassa();

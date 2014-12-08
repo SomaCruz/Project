@@ -64,4 +64,10 @@ public class Kassa
         this.verkocht = 0;
         this.kassaGeld = 0.0;
     }
+    
+    private void getDienblad()
+    {
+        dienblad.getTotaalPrijs();
+        dienblad.getAantalArtikelen();
+    }
 }

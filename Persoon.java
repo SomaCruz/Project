@@ -222,4 +222,10 @@ public class Persoon
             return dienblad.getAantalArtikelen();
         }
     }
+
+    private void getDienblad()
+    {
+        dienblad.getTotaalPrijs();
+        dienblad.getAantalArtikelen();
+    }
 }
