@@ -50,32 +50,11 @@ public class Kantine
             kassa.rekenAf(persoon);
         }
     }
-    
-    /**
-     * Deze methode telt het geld uit de kassa
-     * @return hoeveelheid geld in kassa
-     */
-    public double hoeveelheidGeldInKassa() 
-    {
-        return kassa.hoeveelheidGeldInKassa();
-    }
-    
-    /**
-     * Deze methode geeft het aantal gepasseerde artikelen.
-     * @return het aantal gepasseerde artikelen
-     */
-    public int aantalArtikelen()
-    {
-        return kassa.aantalArtikelen();
-    }
-    
-    /**
-     * Deze methode reset de bijgehouden telling van
-     * het aantal artikelen
-     * en "leegt" de inhoud van de kassa.
-     */
-    public void resetKassa() 
+     
+    private void getKassa()
     {
         kassa.resetKassa();
+        kassa.aantalArtikelen();
+        kassa.hoeveelheidGeldInKassa();
     }
 }
